@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>Casino</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="score_block">
+      <div>
+        Общий счет:
+        <span class="score" id="score">500</span>
+      </div>
+      <label for="rate">Ваша ставка:</label>
+      <input type="number" class="rate" id="rate">
+      <div class="prize" id="prize"></div>
+    </div>
+    <div class="images" id="images_block">
+      <img class="image" src="./src/img/img5.png" alt="">
+      <img class="image" src="./src/img/img5.png" alt="">
+      <img class="image" src="./src/img/img5.png" alt="">
+    </div>
+    <button id="start">start</button>
+    <div class="alert" id="alert_1">Ставка должна ровняться или быть меньше половины банка!</div>
+    <div class="alert" id="alert_2">Недостаточно средств!</div>
+    <div class="alert" id="alert_3">Неверная ставка!</div>
+  </div>
+  <script src="./src/js/index.js"></script>
+</body>
+</html>
